@@ -1,0 +1,100 @@
+/* General App Layout */
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.statistics {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.1em;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #444;
+  margin: 30px 0;
+}
+
+/* Edit Details Form */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form rows */
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between label and input */
+}
+
+.form-row label {
+  width: 100px; /* Fixed width for labels */
+  flex-shrink: 0; /* Prevents labels from shrinking */
+}
+
+.form-row input,
+.form-row textarea {
+  flex-grow: 1; /* Allows input fields to take up remaining space */
+  width: 100%; /* Fallback for older browsers */
+}
+
+/* Comments Section */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comments-section {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #3a3f47;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment strong {
+  font-size: 0.9em;
+  color: #aeb5c0;
+}
+
+.delete-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right; /* Pushes button to the right */
+  font-size: 0.8em;
+}
